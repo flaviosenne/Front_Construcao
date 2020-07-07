@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="conteudo">
+
+    <div class="construcao" >
+        <span> Construção</span>
+    
+    <label for="">Forma Pagamento</label>
+    <select [(ngModel)] = 'construcao.forma_pagamento'name="forma_pagamento" id="">
+        <option value="DI">Dinheiro</option>
+        <option value="CH">Cheque</option>
+        <option value="CC">Cartão Credito</option>
+        <option value="CD">Cartão Debito</option>
+    </select>    
+        
+    <label class = "descricao"for="">N° Construção</label>
+    <input [(ngModel)] = 'construcao.num_construcao'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">Valor</label>
+    <input [(ngModel)] = 'construcao.valor_contrucao'
+    class = "descricao"type="number" >
+    
+    <label class = "descricao"for="">Terreno</label>
+    <input [(ngModel)] = 'construcao.tamanho_terreno'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Construção</label>
+    <input [(ngModel)] = 'construcao.tamanho_construcao'
+    class = "descricao"type="text" >
+
+    <label > Arquitetos</label>
+    <select name="arquiteto"[(ngModel)] = 'construcao.arquiteto'  id="">
+        <option value="{{arquiteto._id}}" *ngFor = 'let arquiteto of arquiteto'> {{arquiteto.nome}}</option>
+    </select>
+
+    <label > Engenheiros</label>
+    <select name="engenheiro"[(ngModel)] = 'construcao.engenheiro' id="">
+        <option value="{{engenheiro._id}}" *ngFor = 'let engenheiro of engenheiro' > {{engenheiro.nome}}</option>
+    </select>
+
+    <label > Clientes</label>
+    <select name="cliente"[(ngModel)] = 'construcao.cliente' id="">
+        <option value="{{cliente._id}}" *ngFor = 'let cliente of cliente' > {{cliente.email}}</option>
+    </select>
+
+    <label > Fornecedores</label>
+    <select name="fornecedor"[(ngModel)] = 'construcao.fornecedores' id="">
+        <option value="{{fornecedor._id}}" *ngFor = 'let fornecedor of fornecedor' > {{fornecedor.email}}</option>
+    </select>
+
+    <label class = "descricao"for="">Quatidade Pedreiros</label>
+    <input [(ngModel)] = 'construcao.qtde_pedreiros'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">Orçamento</label>
+    <input [(ngModel)] = 'construcao.orcamento'
+    class = "descricao"type="text" >
+    
+
+    
+    <div class="botao">
+        <button (click) = "salvar()"> Salvar</button>
+        <button (click) = "cancel()">Cancelar</button>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

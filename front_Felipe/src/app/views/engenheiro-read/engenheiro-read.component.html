@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="conteudo">
+    <button routerLink = '/engenheiro'> Cadastrar novo Engenheiro +</button>
+   <table>
+       <thead>
+           <td>Nome</td>
+           <td>CPF</td>
+           <td>CREA</td>
+           <td>Telefone</td>
+           <td>Endereço</td>
+           <td>Email</td>
+           <td>Alterar</td>
+           <td>Remover</td>
+       </thead>
+       <tr *ngFor = 'let engenheiro of engenheiro'>
+           <td>{{engenheiro.nome}}</td>
+           <td>{{engenheiro.cpf}}</td>
+           <td>{{engenheiro.crea}}</td>
+           <td>{{engenheiro.telefone}}</td>
+           <td>{{engenheiro.endereco}}</td>
+           <td>{{engenheiro.email}}</td>
+           <td><img src="../../../assets/icons/alterar.png" alt="" routerLink = '/engenheiro-update/{{engenheiro._id}}'></td>
+           <td><img src="../../../assets/icons/remover.png" (click)="delete(engenheiro._id)" alt=""></td>
+        </tr>
+   </table>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="conteudo">
+    <div class="arquiteto">
+        <span> Cadastro de Arquiteto</span>
+
+        <label>Nome</label>
+        <input value = 'arquiteto.nome'[(ngModel)]="arquiteto.nome"  name="nome" type="text">
+
+        <label>CPF</label>
+        <input value = 'arquiteto.cpf'[(ngModel)]="arquiteto.cpf"  name="cpf" type="text">
+        
+
+        <label class="crm" for="">CAU</label>
+        <input class="crm" value = 'arquiteto.cau'[(ngModel)]="arquiteto.cau"  name="cau" type="text">
+
+        <label class="cpf" for="">Telefone</label>
+        <input class="cpf" value = 'arquiteto.telefone'[(ngModel)]="arquiteto.telefone"  name="telefone" type="text">
+
+
+        <label>Endereço</label>
+        <input value = 'arquiteto.endereco'[(ngModel)]="arquiteto.endereco"  name="endereco" type="text">
+
+    
+        <label>Email</label>
+        <input value = 'arquiteto.email'[(ngModel)]="arquiteto.email"  name="email" type="text">
+
+        <div class="botao">
+
+            <button (click)="update()">Atualizar</button>
+            <button (click)="cancel()">Cancelar</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

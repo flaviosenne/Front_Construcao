@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="conteudo">
+    <button routerLink = '/'> Cadastrar novo Cliente +</button>
+   <table>
+       <thead>
+           <td>Nome</td>
+           <td>CPF</td>
+           <td>Razão Social</td>
+           <td>Nome Fantasia</td>
+           <td>CNPF</td>
+           <td>Endereço</td>
+           <td>Telefone 1</td>
+           <td>Telefone 2</td>
+           <td>Email</td>
+           <td>Alterar</td>
+           <td>Remover</td>
+       </thead>
+       <tr *ngFor = 'let cliente of cliente'>
+           <td>{{cliente.nome}}</td>
+           <td>{{cliente.cpf}}</td>
+           <td>{{cliente.razao_social}}</td>
+           <td>{{cliente.nome_fantasia}}</td>
+           <td>{{cliente.cnpj}}</td>
+           <td>{{cliente.endereco}}</td>
+           <td>{{cliente.telefone_1}}</td>
+           <td>{{cliente.telefone_2}}</td>
+           <td>{{cliente.email}}</td>
+           <td><img src="../../../assets/icons/alterar.png" alt="" routerLink = '/cliente-update/{{cliente._id}}'></td>
+           <td><img src="../../../assets/icons/remover.png" (click)="delete(cliente._id)" alt=""></td>
+        </tr>
+   </table>
+</div>
+<app-footer></app-footer>

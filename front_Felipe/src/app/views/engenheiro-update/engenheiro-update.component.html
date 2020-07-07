@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="conteudo">
+
+    <div class="engenheiro" >
+        <span> Engenheiro </span>
+    
+    <label class = "nome"for="">Nome</label>
+    <input value = 'engenheiro.nome'[(ngModel)] = 'engenheiro.nome'
+    class = "descricao"type="text" >
+
+    <label class = "cpf"for="">CPF</label>
+    <input value = 'engenheiro.cpf'[(ngModel)] = 'engenheiro.cpf'
+    class = "descricao"type="text" >
+    
+    <label class = "crea"for="">CREA</label>
+    <input value = 'engenheiro.crea'[(ngModel)] = 'engenheiro.crea'
+    class = "descricao"type="text" >
+    
+    <label class = "telefone"for="">Telefone</label>
+    <input value = 'engenheiro.telefone'[(ngModel)] = 'engenheiro.telefone'
+    class = "descricao"type="text" >
+   
+    <label class = "endereco"for="">Endereço</label>
+    <input value = 'engenheiro.endereco'[(ngModel)] = 'engenheiro.endereco'
+    class = "descricao"type="text" >
+
+    <label class = "email"for="">Email</label>
+    <input value = 'engenheiro.email'[(ngModel)] = 'engenheiro.email'
+    class = "descricao"type="text" >
+    
+    
+    <div class="botao">
+
+        <button (click) = "update()"> Salvar</button>
+        <button (click) = "cancel()">Cancelar</button>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

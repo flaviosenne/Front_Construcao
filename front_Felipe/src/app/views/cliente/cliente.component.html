@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div class="conteudo">
+
+    <div class="cliente" >
+        <span> Cliente</span>
+    
+        
+    <label class = "descricao"for="">Nome</label>
+    <input [(ngModel)] = 'cliente.nome'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">CPF</label>
+    <input [(ngModel)] = 'cliente.cpf'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Endereço</label>
+    <input [(ngModel)] = 'cliente.endereco'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Telefone 1</label>
+    <input [(ngModel)] = 'cliente.telefone_1'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Telefone 2</label>
+    <input [(ngModel)] = 'cliente.telefone_2'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Email</label>
+    <input [(ngModel)] = 'cliente.email'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">Razão Social</label>
+    <input [(ngModel)] = 'cliente.razao_social'
+    class = "descricao"type="text" >
+    <label class = "descricao"for="">Nome Fantasia</label>
+    <input [(ngModel)] = 'cliente.nome_fantasia'
+    class = "descricao"type="text" >
+    <label class = "descricao"for="">CNPJ</label>
+    <input [(ngModel)] = 'cliente.cnpj'
+    class = "descricao"type="text" >
+
+    
+    <div class="botao">
+        <button (click) = "salvar()"> Salvar</button>
+        <button (click) = "cancel()">Cancelar</button>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

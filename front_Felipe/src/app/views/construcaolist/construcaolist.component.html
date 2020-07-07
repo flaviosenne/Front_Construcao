@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="conteudo">
+    <div class="home">
+        <button routerLink='/construcao-create'> Cadastrar Construcao</button>
+        <div class="construcao" *ngFor='let construcao of construcao'>
+            <img (click) = 'delete(construcao._id)'class = 'delete' src="../../../assets/icons/remover.png" alt="icone deletar">
+            <span class="data">{{construcao.data_construcao | date: 'dd/MM/yyyy'}}</span>
+            <label class="nome">N° {{construcao.num_construcao}}</label>
+            <label class="nome">{{construcao.cliente?.email}} </label>
+            <label class="nome">{{construcao.arquiteto?.nome}}</label>
+            <img class = 'info'routerLink='/construcao-details/{{construcao._id}}' src="../../../assets/icons/agenda.png" alt="icone informaação">
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

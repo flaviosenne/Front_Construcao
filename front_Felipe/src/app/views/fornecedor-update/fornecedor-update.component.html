@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="conteudo">
+
+    <div class="fornecedor">
+        <div>
+        <span> Cadastro de Fornecedor</span>
+    </div>
+    
+    <label for="">Razão Social</label>
+    <input name = 'razao_social'type="text" value = 'fornecedor.razao_social'[(ngModel)] = 'fornecedor.razao_social'>
+    
+    <label for="">Nome Fantasia</label>
+    <input name = 'nome_fantasia'type="email" value = 'fornecedor.nome_fantasia'[(ngModel)] = 'fornecedor.nome_fantasia'>
+    
+    <label for="">CNPJ</label>
+    <input name = 'cnpj'type="text" value = 'fornecedor.cnpj'[(ngModel)] = 'fornecedor.cnpj'>
+    
+    <label for="">Endereço</label>
+    <input name = 'endereco'type="text" value = 'fornecedor.endereco'[(ngModel)] = 'fornecedor.endereco'>
+    
+    <label for="">Telefone</label>
+    <input name = 'telefone'type="text" value = 'fornecedor.telefone'[(ngModel)] = 'fornecedor.telefone'>
+   
+    <label for="">Email</label>
+    <input name = 'email'type="text" value = 'fornecedor.email'[(ngModel)] = 'fornecedor.email'>
+
+    <div class="botao">
+
+        <button (click) = "update()">Salvar</button>
+        <button (click) = "cancel()">Cancelar</button>
+        
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

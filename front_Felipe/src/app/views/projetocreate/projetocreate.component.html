@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="conteudo">
+
+    <div class="projeto" >
+        <span> Construção</span>
+    
+    <label for="">Forma Pagamento</label>
+    <select [(ngModel)] = 'projeto.forma_pagamento'name="forma_pagamento" id="">
+        <option value="DI">Dinheiro</option>
+        <option value="CH">Cheque</option>
+        <option value="CC">Cartõ Crédito</option>
+        <option value="CD">Cartão Débito</option>
+    </select>    
+        
+    <label class = "descricao"for="">N° Projeto</label>
+    <input [(ngModel)] = 'projeto.num_projeto'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">Valor</label>
+    <input [(ngModel)] = 'projeto.valor_projeto'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Terreno</label>
+    <input [(ngModel)] = 'projeto.tamanho_terreno'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Projeto</label>
+    <input [(ngModel)] = 'projeto.tamanho_projeto'
+    class = "descricao"type="text" >
+
+    <label > Arquitetos</label>
+    <select name="arquiteto"[(ngModel)] = 'projeto.arquiteto'  id="">
+        <option value="{{arquiteto._id}}" *ngFor = 'let arquiteto of arquiteto'> {{arquiteto.nome}}</option>
+    </select>
+
+    <label > Clientes</label>
+    <select name="cliente"[(ngModel)] = 'projeto.cliente' id="">
+        <option value="{{cliente._id}}" *ngFor = 'let cliente of cliente' > {{cliente.nome}}</option>
+    </select>
+
+    <label class = "descricao"for="">Orçamento</label>
+    <input [(ngModel)] = 'projeto.orcamento'
+    class = "descricao"type="text" >
+    
+
+    
+    <div class="botao">
+        <button (click) = "salvar()"> Salvar</button>
+        <button (click) = "cancel()">Cancelar</button>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

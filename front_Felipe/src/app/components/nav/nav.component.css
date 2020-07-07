@@ -1,0 +1,28 @@
+.nav{
+    margin: 0;
+    position: absolute;
+    top: 110px;
+    background-color: rgba(246, 242, 242, 0.6);   
+    width: 125px;
+    padding: 10px;
+    min-height: calc(100vh -160px); 
+}
+
+.nav p {
+    font-size: 1rem;
+    text-align: start;
+}
+
+.nav p img{
+    width: 30px;
+    vertical-align: middle;
+}
+.nav p a {
+    color: rgb(71, 68, 68);
+    margin-left: 10px;
+    text-decoration:  none;
+}
+.none {
+    display: none;
+}
+

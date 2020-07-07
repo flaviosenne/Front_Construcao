@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="conteudo">
+    <div class="home">
+        <button routerLink='/projeto-create'> Cadastrar Projeto</button>
+        <div class="projeto" *ngFor='let projeto of projetos'>
+            <img (click) = 'delete(projeto._id)'class = 'delete' src="../../../assets/icons/remover.png" alt="icone deletar">
+            <span class="data">{{projeto.data_projeto | date: 'dd/MM/yyyy'}}</span>
+            <label class="nome">R$: {{projeto.valor_projeto}}</label>
+            <label class="nome">{{projeto.tamanho_terreno}} m2</label>
+            <label class="nome">{{projeto.arquiteto?.nome}}</label>
+            <img class = 'info'routerLink='/projeto-details/{{projeto._id}}' src="../../../assets/icons/agenda.png" alt="icone informaação">
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

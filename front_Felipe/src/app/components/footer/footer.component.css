@@ -1,0 +1,12 @@
+.footer {
+    background:linear-gradient( rgba(18, 63, 109, 0.9), rgba(3, 72, 112, 0.8));
+    padding: 20px;
+    bottom: 0px;
+    position: static;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+}

@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="conteudo">
+    <button routerLink = '/fornecedor'> Cadastrar novo Engenheiro +</button>
+   <table>
+       <thead>
+           <td>Razão Social</td>
+           <td>Nome Fantasia</td>
+           <td>CNPF</td>
+           <td>Endereço</td>
+           <td>Telefone</td>
+           <td>Email</td>
+           <td>Alterar</td>
+           <td>Remover</td>
+       </thead>
+       <tr *ngFor = 'let fornecedor of fornecedor'>
+           <td>{{fornecedor.razao_social}}</td>
+           <td>{{fornecedor.nome_fantasia}}</td>
+           <td>{{fornecedor.cnpj}}</td>
+           <td>{{fornecedor.endereco}}</td>
+           <td>{{fornecedor.telefone}}</td>
+           <td>{{fornecedor.email}}</td>
+           <td><img src="../../../assets/icons/alterar.png" alt="" routerLink = '/fornecedor-update/{{fornecedor._id}}'></td>
+           <td><img src="../../../assets/icons/remover.png" (click)="delete(fornecedor._id)" alt=""></td>
+        </tr>
+   </table>
+</div>
+<app-footer></app-footer>

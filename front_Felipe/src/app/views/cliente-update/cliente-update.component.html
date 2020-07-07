@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div class="conteudo">
+
+    <div class="cliente" >
+        <span> Cliente</span>
+    
+        
+    <label class = "descricao"for="">Nome</label>
+    <input value = 'cliente.nome'[(ngModel)] = 'cliente.nome'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">CPF</label>
+    <input value = 'cliente.cpf'[(ngModel)] = 'cliente.cpf'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Endereço</label>
+    <input value = 'cliente.endereco'[(ngModel)] = 'cliente.endereco'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Telefone 1</label>
+    <input value = 'cliente.telefone_1'[(ngModel)] = 'cliente.telefone_1'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Telefone 2</label>
+    <input value = 'cliente.telefone_2'[(ngModel)] = 'cliente.telefone_2'
+    class = "descricao"type="text" >
+    
+    <label class = "descricao"for="">Email</label>
+    <input value = 'cliente.email'[(ngModel)] = 'cliente.email'
+    class = "descricao"type="text" >
+
+    <label class = "descricao"for="">Razão Social</label>
+    <input value = 'cliente.razao_social'[(ngModel)] = 'cliente.razao_social'
+    class = "descricao"type="text" >
+    <label class = "descricao"for="">Nome Fantasia</label>
+    <input value = 'cliente.nome_fantasia'[(ngModel)] = 'cliente.nome_fantasia'
+    class = "descricao"type="text" >
+    <label class = "descricao"for="">CNPJ</label>
+    <input value = 'cliente.cnpj'[(ngModel)] = 'cliente.cnpj'
+    class = "descricao"type="text" >
+
+    
+    <div class="botao">
+        <button (click) = "update()"> Salvar</button>
+        <button (click) = "cancel()">Cancelar</button>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>
